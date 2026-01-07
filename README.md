@@ -26,6 +26,14 @@ sign-user-key alice ~/.ssh/id_ed25519.pub
 
 Creates a certificate valid for 52 weeks.
 
+This creates the certificate `~/.ssh/id_ed25519-cert.pub`. You may need to run `ssh-add` to add the certificate to your SSH agent:
+
+```bash
+ssh-add -l # see if your certificate is already loaded
+ssh-add ~/.ssh/id_ed25519 # add the private key corresponding to the cert
+ssh-add -l # see your certificate listed
+```
+
 ### Sign a host key
 
 ```bash
