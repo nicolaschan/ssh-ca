@@ -52,5 +52,5 @@ Add to `/etc/ssh/sshd_config`:
 
 ```
 TrustedUserCAKeys /etc/ssh/ssh-ca.pub
-HostCertificate /etc/ssh/hostkey-cert.pub
+HostCertificate /etc/ssh/ssh_host_ed25519_key-cert.pub
 ```
