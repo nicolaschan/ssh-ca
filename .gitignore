@@ -1,0 +1,5 @@
+/.direnv
+ssh-ca.pub
+pubkey.pem
+hostkey.pub
+hostkey-cert.pub
